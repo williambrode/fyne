@@ -2,13 +2,13 @@ package commands
 
 import (
 	"fmt"
+	"github.com/fogleman/gg"
 	"image"
 	"image/color"
 	"os"
 	"path/filepath"
 	"strings"
 
-	"fyne.io/fynfogvn/altgg
 	"github.com/nfnt/resize"
 	"github.com/williambrode/fyne/v2/cmd/fyne/internal/templates"
 
