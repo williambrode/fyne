@@ -3,9 +3,9 @@ package dialog
 import (
 	"path/filepath"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"github.com/williambrode/fyne/v2"
+	"github.com/williambrode/fyne/v2/theme"
+	"github.com/williambrode/fyne/v2/widget"
 )
 
 const (

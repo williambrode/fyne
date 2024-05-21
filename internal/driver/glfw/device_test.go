@@ -6,8 +6,8 @@ package glfw
 import (
 	"testing"
 
-	"fyne.io/fyne/v2"
-	"github.com/stretchr/testify/assert"
+	"fyne.io/fynsttchrtesti/assrt
+	"github.com/williambrode/fyne/v2"
 )
 
 func Test_Device(t *testing.T) {

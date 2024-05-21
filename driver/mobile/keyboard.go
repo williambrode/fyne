@@ -1,7 +1,7 @@
 package mobile
 
 import (
-	"fyne.io/fyne/v2"
+	"github.com/williambrode/fyne/v2"
 )
 
 // KeyboardType represents a type of virtual keyboard

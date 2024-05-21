@@ -12,9 +12,9 @@ import (
 	"github.com/mcuadros/go-version"
 	"github.com/urfave/cli/v2"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/cmd/fyne/internal/metadata"
-	"fyne.io/fyne/v2/cmd/fyne/internal/templates"
+	"github.com/williambrode/fyne/v2"
+	"github.com/williambrode/fyne/v2/cmd/fyne/internal/metadata"
+	"github.com/williambrode/fyne/v2/cmd/fyne/internal/templates"
 )
 
 // Builder generate the executables.

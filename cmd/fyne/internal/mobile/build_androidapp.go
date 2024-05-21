@@ -19,9 +19,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"fyne.io/fyne/v2/cmd/fyne/internal/mobile/binres"
-	"fyne.io/fyne/v2/cmd/fyne/internal/templates"
-	"fyne.io/fyne/v2/cmd/fyne/internal/util"
+	"github.com/williambrode/fyne/v2/cmd/fyne/internal/mobile/binres"
+	"github.com/williambrode/fyne/v2/cmd/fyne/internal/templates"
+	"github.com/williambrode/fyne/v2/cmd/fyne/internal/util"
 	"golang.org/x/sys/execabs"
 	"golang.org/x/tools/go/packages"
 )

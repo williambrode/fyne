@@ -4,10 +4,10 @@ import (
 	"strconv"
 	"time"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/widget"
+	"github.com/williambrode/fyne/v2"
+	"github.com/williambrode/fyne/v2/container"
+	"github.com/williambrode/fyne/v2/driver/desktop"
+	"github.com/williambrode/fyne/v2/widget"
 )
 
 func scaleString(c fyne.Canvas) string {

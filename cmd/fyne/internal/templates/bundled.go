@@ -3,7 +3,7 @@
 
 package templates
 
-import "fyne.io/fyne/v2"
+import "github.com/williambrode/fyne/v2"
 
 var resourceAndroidManifestXml = &fyne.StaticResource{
 	StaticName: "AndroidManifest.xml",

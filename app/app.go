@@ -9,11 +9,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal"
-	"fyne.io/fyne/v2/internal/app"
-	intRepo "fyne.io/fyne/v2/internal/repository"
-	"fyne.io/fyne/v2/storage/repository"
+	"github.com/williambrode/fyne/v2"
+	"github.com/williambrode/fyne/v2/internal"
+	"github.com/williambrode/fyne/v2/internal/app"
+	intRepo "github.com/williambrode/fyne/v2/internal/repository"
+	"github.com/williambrode/fyne/v2/storage/repository"
 )
 
 // Declare conformity with App interface

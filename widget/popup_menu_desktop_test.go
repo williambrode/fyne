@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/test"
+	"github.com/williambrode/fyne/v2"
+	"github.com/williambrode/fyne/v2/test"
 )
 
 func TestPopUpMenu_KeyboardControl(t *testing.T) {

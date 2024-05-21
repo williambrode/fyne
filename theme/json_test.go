@@ -4,9 +4,9 @@ import (
 	"image/color"
 	"testing"
 
-	"fyne.io/fyne/v2"
-	intRepo "fyne.io/fyne/v2/internal/repository"
-	"fyne.io/fyne/v2/storage/repository"
+	"github.com/williambrode/fyne/v2"
+	intRepo "github.com/williambrode/fyne/v2/internal/repository"
+	"github.com/williambrode/fyne/v2/storage/repository"
 
 	"github.com/stretchr/testify/assert"
 )

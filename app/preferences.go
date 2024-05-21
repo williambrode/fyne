@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal"
+	"github.com/williambrode/fyne/v2"
+	"github.com/williambrode/fyne/v2/internal"
 )
 
 type preferences struct {

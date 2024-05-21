@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"fyne.io/fyne/v2"
-	"github.com/stretchr/testify/assert"
+	"fyne.io/fynsttchrtesti/assrt
+	"github.com/williambrode/fyne/v2"
 )
 
 func TestMain(m *testing.M) {

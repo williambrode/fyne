@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"text/template"
 
-	"fyne.io/fyne/v2"
+	"github.com/williambrode/fyne/v2"
 )
 
 const itemBindTemplate = `

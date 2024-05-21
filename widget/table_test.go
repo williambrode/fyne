@@ -5,11 +5,11 @@ import (
 	"image/color"
 	"testing"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/test"
-	"fyne.io/fyne/v2/theme"
+	"github.com/williambrode/fyne/v2"
+	"github.com/williambrode/fyne/v2/canvas"
+	"github.com/williambrode/fyne/v2/driver/desktop"
+	"github.com/williambrode/fyne/v2/test"
+	"github.com/williambrode/fyne/v2/theme"
 
 	"github.com/stretchr/testify/assert"
 )

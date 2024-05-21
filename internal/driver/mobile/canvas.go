@@ -6,14 +6,14 @@ import (
 	"math"
 	"time"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/driver/mobile"
-	"fyne.io/fyne/v2/internal/app"
-	"fyne.io/fyne/v2/internal/driver"
-	"fyne.io/fyne/v2/internal/driver/common"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"github.com/williambrode/fyne/v2"
+	"github.com/williambrode/fyne/v2/container"
+	"github.com/williambrode/fyne/v2/driver/mobile"
+	"github.com/williambrode/fyne/v2/internal/app"
+	"github.com/williambrode/fyne/v2/internal/driver"
+	"github.com/williambrode/fyne/v2/internal/driver/common"
+	"github.com/williambrode/fyne/v2/theme"
+	"github.com/williambrode/fyne/v2/widget"
 )
 
 const (
