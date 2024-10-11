@@ -1636,7 +1636,7 @@ func (t *boundStringTree) doReload() (retErr error) {
 			item.(*boundExternalStringTreeItem).lock.Unlock()
 		} else {
 			item.(*boundStringTreeItem).lock.Lock()
-			err = item.(*boundStringTreeItem).doSet((*t.val)[id])
+			item.(*boundStringTreeItem).trigger()
 			item.(*boundStringTreeItem).lock.Unlock()
 		}
 		if err != nil {
