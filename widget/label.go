@@ -4,6 +4,7 @@ import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/data/binding"
 	"fyne.io/fyne/v2/theme"
+	"sync"
 )
 
 // Label widget is a label component with appropriate padding and layout.
@@ -25,6 +26,8 @@ type Label struct {
 
 	provider *RichText
 	binder   basicBinder
+
+	createRendererLock sync.Mutex
 }
 
 // NewLabel creates a new label widget with the set text content
@@ -65,6 +68,8 @@ func (l *Label) Bind(data binding.String) {
 
 // CreateRenderer is a private method to Fyne which links this widget to its renderer
 func (l *Label) CreateRenderer() fyne.WidgetRenderer {
+	l.createRendererLock.Lock()
+	defer l.createRendererLock.Unlock()
 	l.provider = NewRichTextWithText(l.Text)
 	l.ExtendBaseWidget(l)
 	l.syncSegments()

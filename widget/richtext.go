@@ -46,6 +46,8 @@ type RichText struct {
 	visualCache map[RichTextSegment][]fyne.CanvasObject
 	cacheLock   sync.Mutex
 	minCache    fyne.Size
+
+	createRendererLock sync.Mutex
 }
 
 // NewRichText returns a new RichText widget that renders the given text and segments.
@@ -72,6 +74,8 @@ func NewRichTextWithText(text string) *RichText {
 
 // CreateRenderer is a private method to Fyne which links this widget to its renderer
 func (t *RichText) CreateRenderer() fyne.WidgetRenderer {
+	t.createRendererLock.Lock()
+	defer t.createRendererLock.Unlock()
 	t.prop = canvas.NewRectangle(color.Transparent)
 	if t.scr == nil && t.Scroll != widget.ScrollNone {
 		t.scr = widget.NewScroll(&fyne.Container{Layout: layout.NewStackLayout(), Objects: []fyne.CanvasObject{

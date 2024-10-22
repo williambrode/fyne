@@ -3,6 +3,7 @@ package widget
 import (
 	"errors"
 	"reflect"
+	"sync"
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/canvas"
@@ -66,6 +67,8 @@ type Form struct {
 
 	onValidationChanged func(error)
 	validationError     error
+
+	createRendererLock sync.Mutex
 }
 
 // Append adds a new row to the form, using the text as a label next to the specified Widget
@@ -394,6 +397,8 @@ func (f *Form) updateLabels() {
 
 // CreateRenderer is a private method to Fyne which links this widget to its renderer
 func (f *Form) CreateRenderer() fyne.WidgetRenderer {
+	f.createRendererLock.Lock()
+	defer f.createRendererLock.Unlock()
 	f.ExtendBaseWidget(f)
 	th := f.Theme()
 	f.cancelButton = &Button{Icon: th.Icon(theme.IconNameCancel), OnTapped: f.OnCancel}
